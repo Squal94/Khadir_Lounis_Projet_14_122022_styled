@@ -1,0 +1,45 @@
+.home {
+  width: 300px;
+  margin: 30px auto;
+  &__header {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-items: center;
+    align-items: center;
+  }
+  &__form {
+    width: 100%;
+    &--title {
+      text-align: center;
+    }
+    &__containerSubmit {
+      margin: 15px auto;
+      display: flex;
+      justify-content: center;
+      // &--submit {
+      //   margin: 10px 0 20px 0;
+      // }
+    }
+  }
+}
+
+input {
+  margin: 10px 0 15px 0;
+}
+
+.inputLabel {
+  display: block;
+  // margin: 10px 0 20px 0;
+}
+
+.selectItem {
+  margin: 20px 0;
+}
+
+fieldset {
+  margin: 10px 0;
+}
+
+#zipCode {
+  width: 170px;
+}

@@ -1,0 +1,13 @@
+.datePicker {
+  display: flex;
+  flex-flow: column nowrap;
+
+  // margin: 15px 0;
+  &__input {
+    width: 170px;
+  }
+}
+
+input[type="date"]:required:invalid::-webkit-datetime-edit {
+  color: transparent;
+}

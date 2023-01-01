@@ -1,0 +1,55 @@
+.selectItem {
+  width: 230px;
+  position: relative;
+  &__state,
+  &__departement {
+    &__field {
+      width: 230px;
+      padding: 7px 16px;
+      height: 32px;
+      box-sizing: border-box;
+      background-color: #f6f6f6;
+      border-radius: 3px;
+      display: flex;
+      flex-flow: row nowrap;
+      align-items: center;
+      justify-content: space-between;
+      cursor: pointer;
+      &--img {
+        width: 15px;
+        transition: transform 0.3s ease-in-out;
+      }
+    }
+    &__list {
+      width: 100%;
+      overflow: hidden;
+      margin: 0 0 0 -35px;
+      // margin-left: -35px;
+      position: absolute;
+      background-color: white;
+      z-index: 5;
+
+      &--option {
+        width: 100%;
+        list-style: none;
+        cursor: pointer;
+        box-sizing: border-box;
+      }
+      &--option p {
+        margin: 0;
+        padding: 0;
+      }
+      &--option:hover {
+        background-color: rgba(119, 119, 215, 0.573);
+      }
+    }
+  }
+}
+
+.hide {
+  visibility: hidden;
+}
+
+.rotate {
+  transform: rotate(180deg);
+}

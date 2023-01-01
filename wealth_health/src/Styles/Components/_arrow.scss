@@ -1,0 +1,24 @@
+.arrowContainer {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  &__up {
+    background-color: #dcdcdc;
+    width: 10px;
+    // purple #7A80DD
+  }
+  &__down {
+    transform: rotate(180deg);
+    background-color: #dcdcdc;
+    width: 10px;
+    // purple #7A80DD
+  }
+}
+
+.colorSelect {
+  background-color: #7a80dd;
+}
+
+.colorWhite {
+  background-color: white;
+}
