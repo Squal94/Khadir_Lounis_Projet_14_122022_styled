@@ -9,7 +9,7 @@ const initialState = {
   filterEmployees: [...dataEmployee],
   searchTerm: "",
   totalPages: "",
-  arrow: true,
+  arrow: false,
   firstItem: 0,
   LastItem: "",
   numberPage: 1,
@@ -30,8 +30,6 @@ export const editArrayContent = createSlice({
       state.data.push(action.payload);
       state.filterEmployees = employeeFilter(state.data, state.searchTerm);
     },
-    deleteEmployee: (state, action) => {},
-    editEmployee: (state, action) => {},
     searchEmployee: (state, action) => {
       state.firstItem = 0;
       state.currentLastItem = state.currentnumberAffichage;
@@ -46,7 +44,7 @@ export const editArrayContent = createSlice({
     },
     sortEmployee: (state, action) => {
       toggle = !toggle;
-      toggle ? (state.arrow = true) : (state.arrow = false);
+      toggle ? (state.arrow = false) : (state.arrow = true);
       switch (action.payload) {
         case "columnFirst":
           state.filterEmployees = sortAZ(state, toggle, "firstName");

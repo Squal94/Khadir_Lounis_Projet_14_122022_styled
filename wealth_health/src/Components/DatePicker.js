@@ -1,14 +1,18 @@
 import React, { useEffect, useState } from "react";
 
+/**
+ * Const DatePicker
+ * @param {dateTitle} dateTitle use hook useState like props.
+ * React component created for multiple reutilistation of input type date in the project.
+ * He used useState for creating dynamically a label and id.
+ */
+
 const DatePicker = (props) => {
   const [dateTitle, setDateTitle] = useState("");
-  // const [setDateValue] = useState("");
 
   useEffect(() => {
     setDateTitle(props.title);
   }, [props]);
-  // console.log(dateTitle);
-  // console.log(dateValue);
 
   return (
     <div className="datePicker">
@@ -19,7 +23,6 @@ const DatePicker = (props) => {
         type="date"
         id={dateTitle.replace(/ /g, "")}
         required
-        // onChange={(e) => setDateValue(e.target.value)}
       />
     </div>
   );

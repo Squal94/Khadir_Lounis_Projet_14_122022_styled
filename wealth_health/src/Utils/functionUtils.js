@@ -1,5 +1,10 @@
 import states from "../Assets/stateData";
 
+/**
+ * Function arrowToogle
+ * @param {selectItem} selectItem : receive state.employee.arrow from editArrayContent.slice.js .
+ * Function arrowToogle is used to toogle the classes by clicking on the thead buttons
+ */
 const arrowToogle = (selectItem) => {
   let eltSelected;
   const arrowselectAll = document.querySelectorAll(".thForme");
@@ -34,6 +39,11 @@ const arrowToogle = (selectItem) => {
   });
 };
 
+/**
+ * Function arrowToogle
+ * @param {data} data : receive dataEmployee from original data.json .
+ * Function saveEmployee  is the function that will recover the form values from the homepage and will transform them to object and add them to the store.
+ */
 const saveEmployee = (e, data) => {
   e.preventDefault();
   let changevalue = "";
@@ -49,8 +59,6 @@ const saveEmployee = (e, data) => {
   const zipCode = document.getElementById("zipCode");
 
   function stateAbr() {
-    console.log(state.innerHTML);
-    // let changevalue = states.find((country) => country === state.innerHTML);
     changevalue = states.filter((obj) => {
       return obj.name === state.innerHTML;
     });
@@ -77,3 +85,37 @@ const saveEmployee = (e, data) => {
 };
 
 export { arrowToogle, saveEmployee };
+
+// const arrowToogle = (selectItem) => {
+//   let eltSelected;
+//   const arrowselectAll = document.querySelectorAll(".thForme");
+//   arrowselectAll.forEach((elt) => {
+//     const arrowUp = elt.querySelector(".arrowContainer__up");
+//     const arrowDown = elt.querySelector(".arrowContainer__down");
+
+//     elt.addEventListener("click", () => {
+//       eltSelected = elt.id;
+//       if (selectItem) {
+//         arrowUp.classList.remove("colorSelect");
+//         arrowDown.classList.remove("colorWhite");
+//         arrowUp.classList.add("colorWhite");
+//         arrowDown.classList.add("colorSelect");
+//       } else {
+//         arrowUp.classList.remove("colorWhite");
+//         arrowDown.classList.remove("colorSelect");
+//         arrowUp.classList.add("colorSelect");
+//         arrowDown.classList.add("colorWhite");
+//       }
+//       arrowselectAll.forEach((elt) => {
+//         if (elt.id !== eltSelected) {
+//           elt
+//             .querySelector(".arrowContainer__up")
+//             .classList.remove("colorWhite", "colorSelect");
+//           elt
+//             .querySelector(".arrowContainer__down")
+//             .classList.remove("colorWhite", "colorSelect");
+//         }
+//       });
+//     });
+//   });
+// };

@@ -1,16 +1,23 @@
 import React, { useState } from "react";
-import dataEmployee from "./../Assets/Data.json";
-import ModalSubmit from "./../Components/ModalSubmit";
 import { NavLink } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
+import dataEmployee from "./../Assets/Data.json";
+import departement from "../Assets/departementData";
+import states from "../Assets/stateData";
+import arrowImg from "./../Assets/img/angle-arrow-down.png";
+import ModalSubmit from "./../Components/ModalSubmit";
+import DatePicker from "../Components/DatePicker";
 import { newEmployee } from "./../Features/editArrayContent.slice";
 import { saveEmployee } from "./../Utils/functionUtils";
 import { open } from "./../Features/modal.slice";
-import { SelectItem } from "@squal94/selectprojet14v2";
-import arrowImg from "./../Assets/img/angle-arrow-down.png";
-import states from "../Assets/stateData";
-import departement from "../Assets/departementData";
-import DatePicker from "../Components/DatePicker";
+import { SelectItem } from "@squal94/librairyselectprojet14";
+import { sortEmployee } from "../Features/editArrayContent.slice";
+
+/**
+ * Const Home
+ * Const HomeReact Component Created to contain and complete pages Home with the form
+ * for new employees and connect dispatch actions with the store.
+ */
 
 const Home = () => {
   const [error, setError] = useState(false);
@@ -22,7 +29,13 @@ const Home = () => {
       <div className="home">
         <div className="home__header">
           <h1 className="home__header--title">HRnet</h1>
-          <NavLink className="home__header--nav" to="/employee">
+          <NavLink
+            className="home__header--nav"
+            to="/employee"
+            onClick={(e) => {
+              dispatch(sortEmployee("columnFirst"));
+            }}
+          >
             View Current Employees
           </NavLink>
         </div>
@@ -42,7 +55,6 @@ const Home = () => {
                 type="text"
                 id="firstName"
                 placeholder="Eric"
-                //   ref={firstName}
                 required
               />
             </div>
@@ -53,31 +65,14 @@ const Home = () => {
                 type="text"
                 id="lastName"
                 placeholder="Durant"
-                //   ref={LastName}
                 required
               />
             </div>
             <div className="home__form__birthday">
-              {/* <label className="inputLabel">Date of Birth</label> */}
               <DatePicker title={"Date of Birth"} />
-              {/* <input
-                className="inputTexte"
-                type="date"
-                id="birthday"
-                //   ref={birthday}
-                required
-              /> */}
             </div>
             <div className="home__form__beginning">
-              {/* <label className="inputLabel">Start Date</label> */}
               <DatePicker title={"Start Date"} />
-              {/* <input
-                className="inputTexte"
-                type="date"
-                id="beginning"
-                //   ref={beginning}
-                required
-              /> */}
             </div>
             <fieldset>
               <legend className="inputLabel">Address</legend>
@@ -88,7 +83,6 @@ const Home = () => {
                   type="text"
                   id="street"
                   placeholder="19 boulvard de la concorde"
-                  //   ref={street}
                   required
                 />
               </div>
@@ -99,7 +93,6 @@ const Home = () => {
                   type="text"
                   id="city"
                   placeholder="Paris"
-                  //   ref={city}
                   required
                 />
               </div>
@@ -111,6 +104,7 @@ const Home = () => {
                   selectClass="state"
                 />
               </div>
+              <div></div>
               <div className="home__form__zipCode">
                 <label className="inputLabel">Zip Code</label>
                 <input
@@ -119,7 +113,6 @@ const Home = () => {
                   id="zipCode"
                   min="0"
                   max="100"
-                  //   ref={zipCode}
                   required
                 />
               </div>

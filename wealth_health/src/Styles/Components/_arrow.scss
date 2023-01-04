@@ -2,16 +2,16 @@
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
+  margin: 0 5px;
+  z-index: -2;
   &__up {
     background-color: #dcdcdc;
     width: 10px;
-    // purple #7A80DD
   }
   &__down {
     transform: rotate(180deg);
     background-color: #dcdcdc;
     width: 10px;
-    // purple #7A80DD
   }
 }
 

@@ -1,6 +1,11 @@
 import React from "react";
 import arrow from "./../Assets/img/arrow.png";
 
+/**
+ * Const Arrow
+ * is the container of arrows contained in the table buttons
+ */
+
 const Arrow = () => {
   return (
     <div className="arrowContainer">

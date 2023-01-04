@@ -3,9 +3,11 @@ import ArrayEmployee from "../Components/ArrayEmployee";
 import NumberLine from "../Components/NumberLine";
 import Pagination from "../Components/Pagination";
 import SearchArray from "../Components/SearchArray";
-// import { SelectItem } from "@squal94/selectprojet14ocrv3";
-// import arrowImg from "./../Assets/img/angle-arrow-down.png";
-// import departement from "../Assets/departementData";
+
+/**
+ * Const Employee
+ * Const Employee React Component Created to contain and complete pages Employee.
+ */
 
 const Employee = () => {
   return (
@@ -15,15 +17,12 @@ const Employee = () => {
         <NumberLine />
         <SearchArray />
       </div>
-      <ArrayEmployee />
+      <div className="EmployeeContainer__table">
+        <ArrayEmployee />
+      </div>
       <div className="EmployeeContainer__pagination">
         <Pagination />
       </div>
-      {/* <SelectItem
-        arrayProps={departement}
-        selectImg={arrowImg}
-        selectId="departement"
-      /> */}
     </div>
   );
 };

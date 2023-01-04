@@ -1,16 +1,17 @@
 .EmployeeContainer {
-  width: 100%;
-  min-width: 900px;
-  margin: 0 auto;
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
   justify-content: center;
+
   &__option {
-    width: 1200px;
+    width: 1240px;
     display: flex;
     flex-flow: row nowrap;
-    align-items: center;
     justify-content: space-between;
+  }
+  &__pagination {
+    margin: 0 0 20px 0;
+    width: 1240px;
   }
 }

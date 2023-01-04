@@ -16,9 +16,6 @@
       margin: 15px auto;
       display: flex;
       justify-content: center;
-      // &--submit {
-      //   margin: 10px 0 20px 0;
-      // }
     }
   }
 }
@@ -29,14 +26,15 @@ input {
 
 .inputLabel {
   display: block;
-  // margin: 10px 0 20px 0;
 }
 
 .selectItem {
-  margin: 20px 0;
+  margin: 10px 0;
 }
 
 fieldset {
+  width: 259px;
+  padding-top: 20px;
   margin: 10px 0;
 }
 

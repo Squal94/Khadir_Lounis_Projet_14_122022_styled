@@ -2,6 +2,13 @@ import React, { useEffect, useState } from "react";
 import { useDispatch } from "react-redux";
 import { paginationArrayLine } from "./../Features/editArrayContent.slice";
 
+/**
+ * Const NumberLine
+ * @param {numberLine} numberLine use hook useState like props and default value is 10.
+ * const NumberLine React component is used to make a change by selecting the number of rows
+ * displayed in the value table
+ */
+
 const NumberLine = () => {
   const [numberLine, setNumberLine] = useState("10");
   const dispatch = useDispatch();
