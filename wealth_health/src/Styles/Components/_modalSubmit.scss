@@ -10,21 +10,30 @@
   top: 0;
   &__content {
     display: flex;
-    flex-flow: row nowrap;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    align-items: center;
     background-color: white;
     max-width: 500px;
     min-width: 200px;
     width: 100%;
     position: relative;
     border-radius: 10px;
+    border: 5px solid $color-secondary;
     &--txt {
-      margin-left: 40px;
+      font-family: "Tusj", serif;
+      font-size: 28px;
+      color: $color-secondary;
+      text-decoration: underline $underline-title 4px;
     }
     &--close {
       position: absolute;
       right: -15px;
       top: -15px;
       cursor: pointer;
+    }
+    &--img {
+      width: 400px;
     }
     &--close img {
       width: 30px;
