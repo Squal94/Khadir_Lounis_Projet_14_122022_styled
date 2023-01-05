@@ -104,13 +104,13 @@ const Pagination = () => {
 
   if (currentPage - 1 < arrayPages.length - pageNumberLimit) {
     spreadAffichageNext = (
-      <li className="paginationContainer__element__btn--list--item">...</li>
+      <li className="paginationContainer__element__btn--list--spread">...</li>
     );
   }
 
   if (currentPage > pageNumberLimit - minPageNumberLimit) {
     spreadAffichagePrev = (
-      <li className="paginationContainer__element__btn--list--item">...</li>
+      <li className="paginationContainer__element__btn--list--spread">...</li>
     );
   }
 
@@ -129,8 +129,7 @@ const Pagination = () => {
     <div className="paginationContainer">
       <div className="paginationContainer__element">
         <p className="paginationContainer__element--value">
-          Showing {currentfirstItem + 1} to {currentLastItem} of{" "}
-          {dataLength.length} entries
+          {currentfirstItem + 1} to {currentLastItem} of {dataLength.length}
         </p>
         <div className="paginationContainer__element__btn">
           <p

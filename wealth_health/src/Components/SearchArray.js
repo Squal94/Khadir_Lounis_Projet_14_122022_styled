@@ -13,10 +13,10 @@ const SearchArray = () => {
   const dispatch = useDispatch();
   return (
     <div className="searchContainer">
-      <label> Search :</label>
       <input
         type="text"
         id="searchId"
+        placeholder="Search employee..."
         onChange={(e) => {
           dispatch(searchEmployee(e.target.value));
         }}

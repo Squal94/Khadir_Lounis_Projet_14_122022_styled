@@ -4,27 +4,50 @@
   flex-flow: column nowrap;
   border-top: 1px solid black;
   &__element {
+    margin-top: 30px;
     width: 100%;
     display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-between;
+    flex-flow: column-reverse nowrap;
+    justify-content: space-around;
+    align-items: center;
     &--value {
+      width: 130px;
       display: flex;
       justify-content: center;
       align-items: center;
+      padding: 10px;
+      margin: 30px;
+      border: 3px solid $underline-title;
+      border-radius: 10px;
+      background: $background-primary;
+      color: $color-tertiary;
     }
     &__btn {
       &--prev {
+        width: 59px;
         display: flex;
         justify-content: center;
         padding: 8px 16px;
         margin: 1px;
+        font-size: 1.2em;
+        border: 3px solid $underline-title;
+        border-radius: 10px;
+        background: $background-primary;
+        color: $color-tertiary;
+        transition: all 0.3s ease-in-out;
       }
       &--next {
+        width: 59px;
         display: flex;
         justify-content: center;
         padding: 8px 16px;
         margin: 1px;
+        font-size: 1.2em;
+        border: 3px solid $underline-title;
+        border-radius: 10px;
+        background: $background-primary;
+        color: $color-tertiary;
+        transition: all 0.3s ease-in-out;
       }
       &--list {
         display: flex;
@@ -32,41 +55,57 @@
         align-items: center;
         justify-content: center;
         padding: 0;
-        margin: 0px 15px;
         &--item {
           display: flex;
           justify-content: center;
           padding: 8px 16px;
-          // border: 0.5px solid black;
-          // background: linear-gradient(to bottom, #fdfdfd, #dadada);
+          font-size: 1.2em;
           margin: 1px;
+          width: 16px;
         }
         &--item:hover {
-          border: 0.5px solid rgb(31, 31, 31);
-          background: linear-gradient(to bottom, #686868, #282828);
+          border: 3px solid $underline-title;
+          background: $background-primary;
+          border-radius: 10px;
           color: white;
+        }
+        &--spread {
+          font-size: 1.2em;
+          border: 3px solid $underline-title;
+          border-radius: 10px;
+          background: $background-primary;
+          color: $color-tertiary;
+          padding: 8px 16px;
+          list-style-type: none;
+          margin: 0 15px;
         }
       }
       display: flex;
       flex-flow: row nowrap;
       align-items: center;
-      justify-content: space-between;
+      justify-content: center;
     }
   }
   &--home {
     display: flex;
     justify-content: center;
     align-items: center;
+    font-family: "Tusj", serif;
+    font-size: 28px;
+    color: $color-secondary;
+    text-decoration: none;
   }
 }
 
 .active {
-  border: 0.5px solid black;
-  background: linear-gradient(to bottom, #fdfdfd, #dadada);
+  border: 2px dashed $color-secondary;
+  border-radius: 10px;
+  transition: all 0.1s ease-in-out;
 }
 
 .activeBtn:hover {
-  border: 0.5px solid rgb(31, 31, 31);
-  background: linear-gradient(to bottom, #686868, #282828);
-  color: white;
+  border: 3px solid $underline-title;
+  border-radius: 10px;
+  background: #fffbc1;
+  color: $color-secondary;
 }

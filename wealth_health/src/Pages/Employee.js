@@ -13,9 +13,9 @@ const Employee = () => {
   return (
     <div className="EmployeeContainer">
       <h1>Current Employees</h1>
+      <SearchArray />
       <div className="EmployeeContainer__option">
         <NumberLine />
-        <SearchArray />
       </div>
       <div className="EmployeeContainer__table">
         <ArrayEmployee />
