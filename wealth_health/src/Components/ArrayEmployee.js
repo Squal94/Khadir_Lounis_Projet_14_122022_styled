@@ -1,7 +1,11 @@
 import React from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { sortEmployee } from "../Features/editArrayContent.slice";
+import {
+  sortEmployee,
+  deleteEmployee,
+} from "../Features/editArrayContent.slice";
 import { arrowToogle } from "./../Utils/functionUtils";
+import deleteIcon from "./../Assets/img/supprimer.png";
 import Arrow from "./Arrow";
 
 /**
@@ -145,7 +149,16 @@ const ArrayEmployee = () => {
               <td>{employee.city}</td>
               <td>{employee.state}</td>
               <td>{employee.zipCode}</td>
-              <td>bouton</td>
+              <td>
+                <img
+                  className="deleteImg"
+                  src={deleteIcon}
+                  alt="delete button"
+                  onClick={() => {
+                    dispatch(deleteEmployee(employee));
+                  }}
+                />
+              </td>
             </tr>
           );
         })}

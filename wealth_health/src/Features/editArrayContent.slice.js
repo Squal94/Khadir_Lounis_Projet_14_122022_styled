@@ -30,6 +30,16 @@ export const editArrayContent = createSlice({
       state.data.push(action.payload);
       state.filterEmployees = employeeFilter(state.data, state.searchTerm);
     },
+    deleteEmployee: (state, action) => {
+      console.log(action.payload);
+      state.data = state.data.filter(
+        (employee) => employee.id !== action.payload.id
+      );
+      state.filterEmployees = state.data.slice(
+        state.firstItem,
+        state.currentLastItem
+      );
+    },
     searchEmployee: (state, action) => {
       state.firstItem = 0;
       state.currentLastItem = state.currentnumberAffichage;
@@ -121,6 +131,7 @@ export const editArrayContent = createSlice({
 });
 
 export const {
+  deleteEmployee,
   newEmployee,
   paginationBtn,
   paginationFunctionnality,
