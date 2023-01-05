@@ -9,11 +9,11 @@ tbody {
 }
 
 tbody tr:nth-child(even) {
-  background-color: #f9f9f9;
+  background-color: #bcd69eb1;
 }
 
 tbody td:first-child {
-  background-color: #e3e3e351;
+  background-color: #f4f4f47b;
 }
 
 th,
@@ -23,6 +23,12 @@ td {
 
 td {
   border-bottom: 1px solid #dddddd;
+}
+
+th {
+  border: 1px solid $color-tertiary;
+  background-color: $color-thead;
+  z-index: -5;
 }
 
 .thForme {
