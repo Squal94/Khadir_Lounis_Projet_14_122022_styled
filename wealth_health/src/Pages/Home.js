@@ -48,82 +48,88 @@ const Home = () => {
               dispatch(open());
             }}
           >
-            <div className="home__form__firstName">
-              <label className="inputLabel">First Name</label>
-              <input
-                className="inputTexte"
-                type="text"
-                id="firstName"
-                placeholder="Eric"
-                required
-              />
-            </div>
-            <div className="home__form__lastName">
-              <label className="inputLabel">Last Name</label>
-              <input
-                className="inputTexte"
-                type="text"
-                id="lastName"
-                placeholder="Durant"
-                required
-              />
-            </div>
-            <div className="home__form__birthday">
-              <DatePicker title={"Date of Birth"} />
-            </div>
-            <div className="home__form__beginning">
-              <DatePicker title={"Start Date"} />
-            </div>
-            <fieldset>
-              <legend className="inputLabel">Address</legend>
-              <div className="home__form__street">
-                <label className="inputLabel">Street</label>
-                <input
-                  className="inputTexte"
-                  type="text"
-                  id="street"
-                  placeholder="19 boulvard de la concorde"
-                  required
-                />
-              </div>
-              <div className="home__form__city">
-                <label className="inputLabel">City</label>
-                <input
-                  className="inputTexte"
-                  type="text"
-                  id="city"
-                  placeholder="Paris"
-                  required
-                />
-              </div>
-              <div className="home__form__state">
-                <label className="selectLabel">State</label>
-                <SelectItem
-                  arrayProps={states}
-                  selectImg={arrowImg}
-                  selectClass="state"
-                />
-              </div>
-              <div></div>
-              <div className="home__form__zipCode">
-                <label className="inputLabel">Zip Code</label>
-                <input
-                  className="inputTexte"
-                  type="number"
-                  id="zipCode"
-                  min="0"
-                  max="100"
-                  required
-                />
-              </div>
-            </fieldset>
-            <div className="home__form__department">
-              <label className="selectLabel">Department</label>
-              <SelectItem
-                arrayProps={departement}
-                selectImg={arrowImg}
-                selectClass="departement"
-              />
+            <div className="home__form--input">
+              <fieldset>
+                <legend className="inputLabel">Information</legend>
+                <div className="home__form__firstName">
+                  <label className="inputLabel">First Name</label>
+                  <input
+                    className="inputTexte"
+                    type="text"
+                    id="firstName"
+                    placeholder="Eric"
+                    required
+                  />
+                </div>
+                <div className="home__form__lastName">
+                  <label className="inputLabel">Last Name</label>
+                  <input
+                    className="inputTexte"
+                    type="text"
+                    id="lastName"
+                    placeholder="Durant"
+                    required
+                  />
+                </div>
+                <div className="home__form__birthday">
+                  <DatePicker title={"Date of Birth"} />
+                </div>
+                <div className="home__form__beginning">
+                  <DatePicker title={"Start Date"} />
+                </div>
+                <div className="home__form__department">
+                  <label className="selectLabel">Department</label>
+                  <SelectItem
+                    arrayProps={departement}
+                    selectImg={arrowImg}
+                    selectClass="departement"
+                  />
+                </div>
+              </fieldset>
+              <fieldset>
+                <legend className="inputLabel">Address</legend>
+                <div className="home__form__street">
+                  <label className="inputLabel">Street</label>
+                  <input
+                    className="inputTexte"
+                    type="text"
+                    id="street"
+                    placeholder="19 boulvard de la concorde"
+                    required
+                  />
+                </div>
+                <div className="home__form__city">
+                  <label className="inputLabel">City</label>
+                  <input
+                    className="inputTexte"
+                    type="text"
+                    id="city"
+                    placeholder="Paris"
+                    required
+                  />
+                </div>
+
+                <div></div>
+                <div className="home__form__zipCode">
+                  <label className="inputLabel">Zip Code</label>
+                  <input
+                    className="inputTexte"
+                    type="number"
+                    id="zipCode"
+                    min="0"
+                    max="100"
+                    required
+                  />
+                </div>
+                <div className="home__form__state">
+                  <label className="selectLabel">State</label>
+                  <SelectItem
+                    arrayProps={states}
+                    selectImg={arrowImg}
+                    selectClass="state"
+                  />
+                </div>
+              </fieldset>
             </div>
             <span className="formContainer--error">
               {error && "Email ou mot de passe incorrect"}

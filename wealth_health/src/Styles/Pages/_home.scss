@@ -1,14 +1,40 @@
 .home {
-  width: 300px;
-  margin: 30px auto;
+  width: 50%;
+  margin: 0 auto;
   &__header {
     display: flex;
     flex-flow: column nowrap;
     justify-items: center;
     align-items: center;
+    &--nav {
+      font-size: 20px;
+      color: $color-secondary;
+      text-decoration: none;
+      transition: all 0.5s ease-in-out;
+    }
+    &--nav:hover {
+      color: $underline-title;
+      text-decoration: none;
+      transform: scale(1.1);
+    }
   }
   &__form {
-    width: 100%;
+    border-width: 10px;
+    border-style: solid;
+    background-image: url("./../../Assets/img/backgroundWork.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+    border-image: $border-primary;
+    padding: 20px;
+    margin: 20px;
+    &--input {
+      display: flex;
+      flex-flow: column nowrap;
+      align-items: flex-start;
+      justify-content: space-around;
+      margin: 50px;
+    }
     &--title {
       text-align: center;
     }
@@ -16,6 +42,20 @@
       margin: 15px auto;
       display: flex;
       justify-content: center;
+      &--submit {
+        padding: 20px;
+        width: 90%;
+        background: $color-primary;
+        font-family: "Tusj", serif;
+        font-size: 28px;
+        color: black;
+        transition: all 0.3s ease-in-out;
+      }
+      &--submit:hover {
+        transform: scale(1.1);
+        background: linear-gradient(to bottom, #f6f6c1, rgb(219, 223, 115));
+        color: $color-secondary;
+      }
     }
   }
 }
@@ -39,5 +79,5 @@ fieldset {
 }
 
 #zipCode {
-  width: 170px;
+  width: 195px;
 }

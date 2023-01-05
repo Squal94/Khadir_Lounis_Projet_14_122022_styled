@@ -1,5 +1,52 @@
+@font-face {
+  font-family: "Tusj";
+  src: url(./../Assets/fonts/FFF_Tusj.ttf);
+}
+@font-face {
+  font-family: "Oswald";
+  src: url(./../Assets/fonts/Oswald-Regular.ttf);
+}
+
+$color-primary: linear-gradient(to bottom, #e0eaaf, rgb(160, 179, 85));
+$color-secondary: #772828;
+$color-tertiary: white;
+$color-nameEdit: #6458f5;
+
+$background-primary: #f4f3f3;
+$background-secondary: white;
+$background-tertiary: #00bc77;
+
+$border-primary: linear-gradient(to bottom, rgb(172, 200, 30), #6f8612ff) 1;
+$border-secondary: #cccccc;
+$border-tertiary: #b1b0f0;
+
+$underline-title: #ffdc84;
+
 body {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 0.9em;
+  font-family: "Oswald", "Times New Roman", Times, serif;
+  font-size: 1em;
   font-weight: 500;
+  background-color: $background-primary;
+}
+
+h1,
+h2 {
+  font-family: "Tusj", serif;
+  font-size: 28px;
+  color: $color-secondary;
+  text-decoration: underline $underline-title 4px;
+}
+
+// fieldset {
+//   background-color: $color-tertiary;
+//   max-width: 500px;
+//   padding: 16px;
+// }
+
+input {
+  border: none;
+  padding: 5px;
+  box-shadow: 0px 0px 10px 1px #f6f6f6 inset;
+  background-color: #f6f2c4ad;
+  font-size: 1em;
 }

@@ -10,7 +10,7 @@
       padding: 6px 16px;
       font-size: 1.1em;
       box-sizing: border-box;
-      background-color: #f6f6f6;
+      background: $color-primary;
       border: 1px solid #c5c5c5;
       border-radius: 3px;
       display: flex;
@@ -18,8 +18,10 @@
       align-items: center;
       justify-content: space-between;
       cursor: pointer;
+      transition: all 0.3s ease-in-out;
       &:hover {
-        background-color: #e6e6e6;
+        background: linear-gradient(to bottom, #f6f6c1, rgb(219, 223, 115));
+        color: $color-secondary;
       }
       &--img {
         width: 10px;
@@ -28,7 +30,8 @@
     }
     &__list {
       width: 99%;
-      overflow: hidden;
+      max-height: 200px;
+      overflow-y: scroll;
       margin: 0;
       padding: 10px 0;
       border: 1px solid #c5c5c5;
@@ -37,13 +40,11 @@
       z-index: 5;
       font-size: 1.1em;
       &--option {
-        width: 100%;
         list-style: none;
         cursor: pointer;
         box-sizing: border-box;
       }
       &--option p {
-        width: 100%;
         margin: 0;
         padding: 5px 15px;
       }
