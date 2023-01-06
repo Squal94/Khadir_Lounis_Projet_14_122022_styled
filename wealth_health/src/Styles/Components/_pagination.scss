@@ -101,8 +101,11 @@
 }
 
 .active {
-  border: 2px dashed $color-secondary;
+  font-size: 1.2em;
+  border: 3px solid $underline-title;
   border-radius: 10px;
+  background: $background-primary;
+  color: $color-tertiary;
   transition: all 0.1s ease-in-out;
 }
 
