@@ -28,14 +28,15 @@ For different libraries you must :
 
     2. libary use for the project :
 
-    - @squal94/librairyselectprojet14
-    - react
-    - react-dom
-    - react-redux
-    - reduxjs/toolkit
-    - react-router-dom
-    - react-scripts
-    - sass
+    [@squal94/selectcomponent14v7 "^1.0.0"] (https://github.com/Squal94/Khadir_Lounis_Projet_14_122022_LibrarySelectv2.git)
+    - react "^18.2.0"
+    - react-dom "^18.2.0"
+    - react-redux "^8.0.5"
+    - reduxjs/toolkit "^1.9.1"
+    - react-router-dom "^6.4.4"
+    - react-scripts "5.0.1"
+    - sass "^1.56.1"
+
 
       This is all the package and library use for the proper operation of this project.
 
@@ -50,7 +51,11 @@ And start the application with the code :
 
 And happy navigation.
 
-## 5.Précision
+## 5.Build
+
+Npm run build Succes .
+
+![](./wealth_health/src/Assets/img/CompiledSucess.png)
 
 ## 6.Classic version
 
