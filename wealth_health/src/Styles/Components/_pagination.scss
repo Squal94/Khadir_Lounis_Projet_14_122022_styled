@@ -71,6 +71,7 @@
           background: $background-primary;
           border-radius: 10px;
           color: white;
+          width: 12px;
         }
         &--spread {
           font-size: 1.2em;
@@ -106,6 +107,7 @@
   border-radius: 10px;
   background: $background-primary;
   color: $color-tertiary;
+  width: 13px;
   transition: all 0.1s ease-in-out;
 }
 

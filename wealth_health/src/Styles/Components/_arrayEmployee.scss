@@ -36,9 +36,15 @@ th {
   flex-flow: row nowrap;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 }
 
 .deleteImg {
   margin-left: 15px;
   width: 20px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+.deleteImg:hover {
+  transform: scale(1.2);
 }
