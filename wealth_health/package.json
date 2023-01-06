@@ -4,8 +4,7 @@
   "private": true,
   "dependencies": {
     "@reduxjs/toolkit": "^1.9.1",
-    "@squal94/librairyselectprojet14": "^1.0.0",
-    "@squal94/selectprojet14ocrv2": "^1.0.0",
+    "@squal94/selectcomponent14v7": "^1.0.0",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",

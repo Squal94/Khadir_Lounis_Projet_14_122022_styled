@@ -10,7 +10,7 @@ import DatePicker from "../Components/DatePicker";
 import { newEmployee } from "./../Features/editArrayContent.slice";
 import { saveEmployee } from "./../Utils/functionUtils";
 import { open } from "./../Features/modal.slice";
-import { SelectItem } from "@squal94/librairyselectprojet14";
+import { SelectItem } from "@squal94/selectcomponent14v7";
 import { sortEmployee } from "../Features/editArrayContent.slice";
 
 /**
