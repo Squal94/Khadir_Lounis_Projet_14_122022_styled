@@ -16,7 +16,7 @@ Your development team want to migrate jquery to react application.
 I chose to convert the component select, you can find the repository
 and the operating documents on this repository :
 
-[React Component npm package](https://github.com/Squal94/Khadir_Lounis_Projet_14_122022_LibrarySelect.git)
+[React Component npm package](https://github.com/Squal94/Khadir_Lounis_Projet_14_122022_LibrarySelectv2.git)
 
 ## 3.Install packages and library for this application
 
