@@ -36,14 +36,8 @@ npm i
 
 ### Dependencies and components
 
-[@squal94/selectcomponent14v7 "^1.0.0"](https://github.com/Squal94/Khadir_Lounis_Projet_14_122022_LibrarySelectv2.git)
-[react "^18.2.0"](https://github.com/facebook/react/blob/main/CHANGELOG.md#1820-june-14-2022)
-[react-dom "^18.2.0"](https://github.com/facebook/react)
-[react-redux "^8.0.5"](https://github.com/reduxjs/react-redux)
-[reduxjs/toolkit "^1.9.1"](https://github.com/reduxjs/redux-toolkit)
-[react-router-dom "^6.4.4"](https://github.com/remix-run/react-router)
-[react-scripts "5.0.1"](https://github.com/facebook/create-react-app)
-[sass "^1.56.1"](https://github.com/sass/dart-sass)
+[@squal94/selectcomponent14v7 "^1.0.0"](https://github.com/Squal94/Khadir_Lounis_Projet_14_122022_LibrarySelectv2.git)[react "^18.2.0"](https://github.com/facebook/react/blob/main/CHANGELOG.md#1820-june-14-2022)[react-dom "^18.2.0"](https://github.com/facebook/react)[react-redux "^8.0.5"](https://github.com/reduxjs/react-redux)
+[reduxjs/toolkit "^1.9.1"](https://github.com/reduxjs/redux-toolkit)[react-router-dom "^6.4.4"](https://github.com/remix-run/react-router)[react-scripts "5.0.1"](https://github.com/facebook/create-react-app)[sass "^1.56.1"](https://github.com/sass/dart-sass)
 
 This is all the package and library use for the proper operation of this project.
 
